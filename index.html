@@ -9,7 +9,7 @@
 
     <article>
 	  <header>
-		<h1>Vocoder is all you need: Anomaly detection by ParallelWavGAN</h1>
+		<h1>Vocoder is all you need: Spotting adversarial attacks by ParallelWavGAN</h1>
 	  </header>
 	</article>
     <div><b>Paper:</b> <a href="">arXiv</a></div>
@@ -34,6 +34,16 @@
 				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/clean_vocoder_36.wav"></audio></td>
 			</tr>
 			
+			<tr><td>2. epsilon=5, eer = 74.04%(wo vocoder), eer = 29.86%(w vocoder) </td></tr>
+			<tr>
+				<td><strong>without vocoder</strong></td>
+				<td><strong>with vocoder</strong></td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep5_00000000.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep5_vocoder_00000000.wav"></audio></td>
+			</tr>
+			
 			<tr><td>3. epsilon=10, eer = 90.57%(wo vocoder), eer = 51.22%(w vocoder) </td></tr>
 			<tr>
 				<td><strong>without vocoder</strong></td>
@@ -44,7 +54,17 @@
 				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep10_vocoder_00000000.wav"></audio></td>
 			</tr>
 			
-			<tr><td>5. epsilon=10, eer = 99.33%(wo vocoder), eer = 86.22%(w vocoder) </td></tr>
+			<tr><td>4. epsilon=15, eer = 95.66%(wo vocoder), eer = 64.71%(w vocoder) </td></tr>
+			<tr>
+				<td><strong>without vocoder</strong></td>
+				<td><strong>with vocoder</strong></td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep15_00000000.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep15_vocoder_00000000.wav"></audio></td>
+			</tr>
+			
+			<tr><td>5. epsilon=20, eer = 99.33%(wo vocoder), eer = 86.22%(w vocoder) </td></tr>
 			<tr>
 				<td><strong>without vocoder</strong></td>
 				<td><strong>with vocoder</strong></td>
