@@ -24,19 +24,36 @@
 		<h3>Adversarial Audio Demo</h3>
 		<table><tbody>
 
-			<tr><td>1. epsilon = 15, eer = 95.23% </td></tr>
+			<tr><td>1. clean audio, eer = 2.88%(wo vocoder), eer = 3.48%(w vocoder) </td></tr>
 			<tr>
-				<td><strong>Original audio</strong></td>
-				<td><strong>Adversarial audio</strong></td>
+				<td><strong>without vocoder</strong></td>
+				<td><strong>with vocoder</strong></td>
 			</tr>
 			<tr>
-				<td><audio controls="" class="audio4"><source src="wavs/epsilon15/id10270_5r0dWxy17C8_00022.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/epsilon15/id10270_5r0dWxy17C8_00001-id10270_5r0dWxy17C8_00022.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/clean_36.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/clean_vocoder_36.wav"></audio></td>
 			</tr>
-            <tr>
-				<td><audio controls="" class="audio4"><source src="wavs/epsilon15/id10275_cFv9Ofrmc9k_00001.wav"></audio></td>
-				<td><audio controls="" class="audio4"><source src="wavs/epsilon15/id10280_9AtE4C309P8_00005-id10275_cFv9Ofrmc9k_00001.wav"></audio></td>
+			
+			<tr><td>3. epsilon=10, eer = 90.57%(wo vocoder), eer = 51.22%(w vocoder) </td></tr>
+			<tr>
+				<td><strong>without vocoder</strong></td>
+				<td><strong>with vocoder</strong></td>
 			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep10_00000000.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep10_vocoder_00000000.wav"></audio></td>
+			</tr>
+			
+			<tr><td>5. epsilon=10, eer = 99.33%(wo vocoder), eer = 86.22%(w vocoder) </td></tr>
+			<tr>
+				<td><strong>without vocoder</strong></td>
+				<td><strong>with vocoder</strong></td>
+			</tr>
+			<tr>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep20_00000000.wav"></audio></td>
+				<td><audio controls="" class="audio4"><source src="wavs/vocoder_audio/adv_ep20_vocoder_00000000.wav"></audio></td>
+			</tr>
+            
         </tbody></table>
     </div><br>
 
